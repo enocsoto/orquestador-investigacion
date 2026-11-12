@@ -1,0 +1,14 @@
+{
+  "pregunta": "Investigá cuántos pedidos tuvo el cliente 102 y el total, y decime si el ticket promedio supera 4000.",
+  "task_completed": true,
+  "steps": 3,
+  "delegacion": [
+    "supervisor -> research (no hay hallazgo)",
+    "research llama buscar_fuente(102) y deja pedidos=3, total=14500",
+    "supervisor -> analyst (hay dato crudo, falta el cálculo)",
+    "analyst llama calcular_ticket_promedio(14500, 3) -> 4833.33, supera 4000",
+    "supervisor -> finish (hallazgo y análisis completos)"
+  ],
+  "findings": "El cliente 102 tuvo 3 pedidos por un total de 14500.",
+  "analysis": "El ticket promedio es 4833.33 y sí supera 4000."
+}
